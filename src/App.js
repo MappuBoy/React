@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-import SignInOutContainer from './containers/index.js';
+import Login from './components/login'
+import Signup from './components/signup';
 
 
 function App() {
   return (
     <div className="App">
-     <SignInOutContainer/>
-      
+     <Signup/>
     </div>
-  )
+  );
 }
 
 export default App;
