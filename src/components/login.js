@@ -2,14 +2,14 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { Avatar,Paper, Grid,Box,TextField,Typography,Link, Button} from "@mui/material"
 import React from "react"
 
-const Login=()=>{
+const Login=({handleChange})=>{
 
-    const papreStyle = {padding :20,height:'70vh',width:280,margin:"20px auto"}
+    const papreStyle = {padding :20,height:'83vh',width:300,margin:"0 auto"}
     const avatarStyle = {backgroundColor:'#1bbd7e'}
     const btnStyle={margin:'8px 0'}
     return (
        <Grid>
-        <Paper elevation={10} style={papreStyle}>
+        <Paper style={papreStyle}>
             <Grid align='center'>
            <Avatar style={avatarStyle}><LockOutlinedIcon/></Avatar>
             <h2>Login</h2>
@@ -38,7 +38,7 @@ const Login=()=>{
       </div>
       </Box>
       <Typography  variant="caption" display="block" gutterBottom> Do you have an account ?
-        <Link href="#" >
+        <Link href="#" onClick={()=>handleChange("event",1)} >
             create a account            
         </Link>
        </Typography>

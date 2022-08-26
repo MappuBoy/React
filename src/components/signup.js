@@ -2,12 +2,12 @@ import ControlPointOutlinedIcon from '@mui/icons-material/ControlPointOutlined';
 import { Avatar, Grid, Paper,Typography,TextField,Box ,Button} from "@mui/material";
 import React from "react";
 const Signup = () =>{
-    const papreStyle={padding :20,height:'80vh',width:280,margin:"20px auto"}
+    const papreStyle={padding :20,width:300,margin:"0 auto"}
     const headerStyle={margin:0}
     const avatarStyle={backgroundColor:'#1bbd7e'}
     return(
         <Grid>
-            <Paper elevation={20} style={papreStyle}>
+            <Paper style={papreStyle}>
                 <Grid align='center'>
                 <Avatar style={avatarStyle}><ControlPointOutlinedIcon/></Avatar>
                 <h2 style={headerStyle}>Sign in</h2>
